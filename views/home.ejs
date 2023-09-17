@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <div class="containair">
+    <div class="'dispo">
+  <div class="item1"> <h1>hello world</h1></div>
+ 
+    <% listsDO.forEach(list=>{%>
+        <div class="item2">
+        <p><input type="checkbox">=><%= list.name %> </p>
+    </div>
+  <% })%></div>
+    <div class="item3">
+        <button><a href="note.ejs">ajouter-une-option</a></button>
+    </div>
+  </div>   
+    
+</body>
+</html>
